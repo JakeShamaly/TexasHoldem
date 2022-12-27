@@ -22,8 +22,6 @@ namespace TexasHoldem
 
             gameDeck.deal(Players);
 
-            //Console.WriteLine($"Jake has    {Jake.Hand[0].Rank}{Jake.Hand[0].Suit} and {Jake.Hand[1].Rank}{Jake.Hand[1].Suit}\nAnt has     {Ant.Hand[0].Rank}{Ant.Hand[0].Suit} and {Ant.Hand[1].Rank}{Ant.Hand[1].Suit} \nJared has   {Jared.Hand[0].Rank}{Jared.Hand[0].Suit} and {Jared.Hand[1].Rank}{Jared.Hand[1].Suit}");
-
             Game Test = new Game(Players, gameDeck.Flop, gameDeck.River, gameDeck.Turn);
 
             Test.Anti();
