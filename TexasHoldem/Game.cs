@@ -16,7 +16,6 @@ namespace TexasHoldem
             this.Flop = flop;
             this.River = river;
             this.Turn = turn;
-            //this.Check = false;
         }
 
         public int Pot { get; set; }
@@ -24,7 +23,6 @@ namespace TexasHoldem
         List<Card> Flop { get; set; }
         List<Card> River { get; set; }      // Maybe change River and Turn to be Cards in later version to slightly improve efficiency.
         List<Card> Turn { get; set; }
-        //public bool Check { get; set; } 
 
         /*
         The functions Anti, PostFlop, PostRiver, and PortTurn are all almost identicle.
@@ -32,7 +30,6 @@ namespace TexasHoldem
         */
         public void Anti()  // First round of betting.
         {
-            //Console.WriteLine("Anti is $5");
             int Bet = 5;            // Initialized to $5 for first round only.
             string response;        // Used to determine what the player wants to do in a ReadLine().
             bool contin = false;    // Used later to determine if the round of betting needs to continue.
